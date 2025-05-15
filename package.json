@@ -3,12 +3,16 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --open",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "astro": "^5.7.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "postcss-px-to-viewport": "^1.1.1"
   }
 }

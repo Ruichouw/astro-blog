@@ -1,16 +1,35 @@
 ---
-
+import "../styles/base.css";
+import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <Header />
+    index
+  </body>
+  <style>
+    .test1 {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .box1 {
+      width: 50vw;
+      height: 100px;
+      background-color: red;
+    }
+    .box2 {
+      width: 50vw;
+      height: 100px;
+      background-color: blue;
+    }
+  </style>
 </html>

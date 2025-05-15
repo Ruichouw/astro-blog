@@ -1,0 +1,65 @@
+---
+
+---
+
+<header>
+  <nav>
+    <h2><a href="/">Ruihcou's Blog</a></h2>
+    <!-- 路由跳转start -->
+    <div class="internal-links">
+      <a href="/">首页</a>
+      <a href="/blog">博客</a>
+    </div>
+    <!-- 汉堡王菜单start -->
+    <div class="switch_button">
+      <button style="background-color: black;">
+        <img
+          src="src/assets/imgs/menu.png"
+          alt=""
+          style="width: 40px;
+          height: 40px;"
+        />
+      </button>
+    </div>
+    <!-- 汉堡王菜单end -->
+  </nav>
+</header>
+<style>
+  header {
+    height: 64px;
+    background-color: black;
+    color: #fff;
+  }
+  h2 {
+    font-size: 19px;
+  }
+  .internal-links {
+    font-size: 19px;
+    display: flex;
+    gap: 50px;
+  }
+  nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+  }
+  .switch_button {
+    position: absolute;
+    right: 10px;
+    margin: 0 auto;
+    display: none;
+  }
+  button {
+    border: 0;
+  }
+  @media (max-width: 720px) {
+    .internal-links {
+      display: none;
+    }
+    .switch_button {
+      display: block;
+    }
+  }
+</style>
